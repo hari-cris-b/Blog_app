@@ -1,10 +1,9 @@
 <%- include('partials/header.ejs') %>
 
+<body>
 <div class="container content">
   <h1 class="text-center my-4">My Blog Posts</h1>
-
   <div class="row">
-    
     <% posts.forEach(post => { %>
       <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
@@ -26,10 +25,9 @@
       </div>
     <% }) %>
   </div>
-
   <div class="text-center my-4">
     <a href="/new" class="btn btn-primary">Create New Post</a>
   </div>
 </div>
-
+</body>
 <%- include('partials/footer.ejs') %>
