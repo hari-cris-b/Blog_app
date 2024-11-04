@@ -1,10 +1,20 @@
 import express from "express";
 import bodyParser from "body-parser";
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 const app = express();
+// Get the current directory
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.set("view engine", "ejs");
+// Set the views directory
+app.set('views', path.join(__dirname, 'views'));
+
+// Set the view engine (assuming EJS)
+app.set('view engine', 'ejs');
 
 let posts = [];
 
