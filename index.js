@@ -83,7 +83,7 @@ app.post("/delete/:id", (req, res) => {
 });
 
 // Set up server to listen on specified port
-const port = 3000;
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
