@@ -29,6 +29,10 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+.card-title{
+font-size: 1.25rem;
+}
+
 
 /* Buttons and Links */
 a, .btn {
