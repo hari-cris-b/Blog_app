@@ -48,6 +48,10 @@ a, .btn {
   margin-right: 0;
 }
 
+.btn-primary{
+  background-color: #00aaff;
+}
+
 /* Navbar styling with ocean wave */
 .navbar {
   position: relative;
